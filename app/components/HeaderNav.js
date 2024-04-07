@@ -1,4 +1,5 @@
-import { CardHeader, Typography } from "@mui/material";
+"use client";
+import { CardHeader, Typography, useMediaQuery } from "@mui/material";
 import MDButton from "./common/Button/MDButton";
 import MDBox from "./common/MDBox/MDBox";
 import { IoCall } from "react-icons/io5";
@@ -20,6 +21,11 @@ const cardHead = [
 ];
 
 const HeaderNav = () => {
+  const isMediumScreen = useMediaQuery("(max-width:1201px)");
+
+  if (isMediumScreen) {
+    return null;
+  }
   return (
     <MDBox
       width="100%"
