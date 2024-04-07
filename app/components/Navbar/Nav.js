@@ -24,7 +24,7 @@ const Navbar = () => {
       <AppBar
         sx={{
           background: "#D4D4D4",
-          mt: { xl: 12, lg: 12, md: 0, sm: 0, xs: 0 },
+          position: "sticky",
         }}
       >
         <Toolbar>
